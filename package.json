@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/polyfill": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "babel-loader": "^8.0.0-beta",
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-preprocess": "^3.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^4.0.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
