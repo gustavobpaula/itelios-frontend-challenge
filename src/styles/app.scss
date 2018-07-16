@@ -1,0 +1,116 @@
+@import "@material/mwc-icon/mwc-icon";
+@import "slick-carousel/slick/slick.scss";
+
+body {
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.history {
+	width: 25%;
+}
+.recommendations {
+	width: 75%;
+}
+
+.history,
+.recommendations {
+	display: inline-block;
+	vertical-align: top;
+	@media screen and (max-width: 900px) {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+h2 {
+	color: #5e6774;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 29px;
+}
+
+.shelf-item {
+	border: 1px solid #edeaea;
+	color: #303132;
+	display: inline-block;
+	font-size: 16px;
+	max-width: 311px;
+	vertical-align: top;
+	.box {
+		padding: 25px;
+	}
+	figure {
+		padding: 0;
+		margin: 0;
+		img {
+			max-width: 100%;
+		}
+	}
+	.name {
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: normal;
+	}
+	.price {
+		color: #5e6774;
+		.bestPrice {
+			margin-bottom: 0;
+			strong {
+				color: #353f4f;
+				font-size: 23px;
+			}
+		}
+		.installments {
+			margin-top: 8px;
+			strong {
+				color: #353f4f;
+			}
+		}
+	}
+	.buyButton {
+		background: transparent;
+		border: 1px solid #d4d2d2;
+		color: #818181;
+		cursor: pointer;
+		font-family: 'Roboto', sans-serif;
+		font-size: 21px;
+		font-weight: bold;
+		padding: 15px 0;
+		width: 100%;
+	}
+
+}
+
+.slick-slide {
+	text-align: center;
+}
+
+ul.slick-dots {
+	list-style: none;
+	text-align: center;
+    padding: 0;
+	li {
+		cursor: pointer;
+		display: inline-block;
+		margin: 5px;
+		&:before {
+			content: '';
+			background-color: #adadad;
+			border-radius: 50%;
+			display: block;
+			width: 13px;
+			height: 13px;
+		}
+		button {
+			display: none;
+		}
+		&.slick-active {
+			&:before {
+				background-color: #353f4f;
+			}
+		}
+	}
+}

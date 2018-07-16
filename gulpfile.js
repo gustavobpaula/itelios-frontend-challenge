@@ -130,6 +130,7 @@ gulp.task('styles', ['sassLint'], () => {
 		.pipe($.util.env.production ? $.util.noop() : $.sourcemaps.init())
 		.pipe($.sass({
 			outputStyle: $.util.env.production ? 'compressed' : 'nested',
+			includePaths: [ 'node_modules/' ]
 		}).on('error', $.sass.logError))
 		.pipe($.autoprefixer())
 		.pipe($.sourcemaps.write('.'))
